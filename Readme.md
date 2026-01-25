@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Aliya](https://up.htmlacademy.ru/htmlcss-individual/2/user/289087).
-* Наставник: `Неизвестно`.
+* Студент: [Алия](https://up.htmlacademy.ru/htmlcss-individual/2/user/289087).
+* Наставник: [Дина Шарипова](https://htmlacademy.ru/profile/id1418957).
 
 ---
 
