@@ -2,7 +2,7 @@
 
 * Студент: [Алия](https://up.htmlacademy.ru/htmlcss-individual/2/user/289087).
 * Наставник: [Дина Шарипова](https://htmlacademy.ru/profile/id1418957).
-
+* Сайт: [Седона](https://aliagiray.github.io/289087-sedona-2/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
