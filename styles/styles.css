@@ -1,0 +1,24 @@
+.promo {
+  background-color: #3f5e72;
+  background-image: url("../images/background/bg-promo.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.advantages__item-image {
+  background-color: #82b3d3;
+}
+
+.newsletter--index {
+  background-color: #82b3d3;
+  background-image: url("../images/background/bg-newsletter.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.catalog__filter-wrapper {
+  background-color: #3f5e72;
+  background-image: url("../images/background/bg-catalog-filter.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
