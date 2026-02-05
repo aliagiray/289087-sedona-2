@@ -266,7 +266,9 @@ body {
 
 .catalog-filter__price input {
   font-family: inherit;
+  font-size: 18px;
   font-weight: 700;
+  line-height: 1.33333;
 }
 
 .catalog-filter__price label {
