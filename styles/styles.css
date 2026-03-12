@@ -898,21 +898,16 @@ img {
 }
 
 .breadcrumbs__link--home {
-  /* background-image: url("../images/icons/icon-breadcrumbs-house.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 12px 12px; */
-
   background-color: #fff;
 
   mask-image: url("../images/icons/icon-breadcrumbs-house.svg");
   mask-repeat: no-repeat;
   mask-position: center;
-  mask-size: contain;
+  mask-size: 12px 12px;
   -webkit-mask-image: url("../images/icons/icon-breadcrumbs-house.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
-  -webkit-mask-size: contain;
+  -webkit-mask-size: 12px 12px;
 }
 
 .breadcrumbs__link--home[href]:hover {
