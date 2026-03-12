@@ -53,9 +53,6 @@
               </a>
             </li>
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="index.html">Гостиницы</a>
-            </li>
-            <li class="breadcrumbs__item">
               <a class="breadcrumbs__link">Гостиницы</a>
             </li>
           </ol>
@@ -64,20 +61,23 @@
               <legend class="catalog-filter__title">Инфраструктура</legend>
               <ul class="catalog-filter__list">
                 <li class="catalog-filter__item">
-                  <label>
-                    <input type="checkbox" name="swimming-pool" checked>
+                  <label class="catalog-filter__label">
+                    <input class="catalog-filter__input" type="checkbox" name="swimming-pool" checked>
+                    <span></span>
                     Бассейн
                   </label>
                 </li>
                 <li class="catalog-filter__item">
-                  <label>
-                    <input type="checkbox" name="parking" checked>
+                  <label class="catalog-filter__label">
+                    <input class="catalog-filter__input" type="checkbox" name="parking" checked>
+                    <span></span>
                     Парковка
                   </label>
                 </li>
                 <li class="catalog-filter__item">
-                  <label>
-                    <input type="checkbox" name="wi-fi">
+                  <label class="catalog-filter__label">
+                    <input class="catalog-filter__input" type="checkbox" name="wi-fi">
+                    <span></span>
                     Wi-Fi
                   </label>
                 </li>
@@ -87,20 +87,23 @@
               <legend class="catalog-filter__title">Тип Жилья</legend>
               <ul class="catalog-filter__list">
                 <li class="catalog-filter__item">
-                  <label>
-                    <input type="radio" name="accomodation-type" value="hotel" checked>
+                  <label class="catalog-filter__label">
+                    <input class="catalog-filter__input" type="radio" name="accomodation-type" value="hotel" checked>
+                    <span></span>
                     Гостиница
                   </label>
                 </li>
                 <li class="catalog-filter__item">
-                  <label>
-                    <input type="radio" name="accomodation-type" value="motel">
+                  <label class="catalog-filter__label">
+                    <input class="catalog-filter__input" type="radio" name="accomodation-type" value="motel">
+                    <span></span>
                     Мотель
                   </label>
                 </li>
                 <li class="catalog-filter__item">
-                  <label>
-                    <input type="radio" name="accomodation-type" value="apartments">
+                  <label class="catalog-filter__label">
+                    <input class="catalog-filter__input" type="radio" name="accomodation-type" value="apartments">
+                    <span></span>
                     Апартаменты
                   </label>
                 </li>
@@ -108,21 +111,28 @@
             </fieldset>
             <fieldset class="catalog-filter__group">
               <legend class="catalog-filter__title">Стоимость, ₽</legend>
-              <p class="catalog-filter__price">
-                <label for="catalog-filter-price-from">
-                  <input type="number" name="price-from" id="catalog-filter-price-from" placeholder="0" value="0">
-                  <span class="visually-hidden">Цена за сутки,</span>
-                  <span class="catalog-filter__price-text">от</span>
+              <p class="catalog-filter__price range-wrapper-inputs">
+                <label class="range-label range-label--min">
+                  <input class="range-input range-input--min" type="number" name="min-price" value="0">
+                  <span class="visually-hidden">Цена за сутки, от</span>
                 </label>
-                <label for="catalog-filter-price-to">
-                  <input type="number" name="price-to" id="catalog-filter-price-to" placeholder="9000" value="9000">
-                  <span class="visually-hidden">Цена за сутки,</span>
-                  <span class="catalog-filter__price-text">до</span>
+                <label class="range-label range-label--max">
+                  <input class="range-input range-input--max" type="number" name="max-price" value="9000">
+                  <span class="visually-hidden">Цена за сутки, до</span>
                 </label>
               </p>
-              <label class="price-range" for="price-range">
-                <input type="range" name="price-range" id="price-range" min="0" max="9000" value="6500" step="500">
-              </label>
+              <div class="range">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 226px">
+                    <button class="range-toggle range-toggle--min" type="button">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
+                    <button class="range-toggle range-toggle--max" type="button">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
             <div class="catalog-filter__buttons">
               <button class="button button--blue" type="submit">Показать</button>
@@ -132,7 +142,7 @@
         </div>
         <div class="catalog__results">
           <div class="catalog__heading-wrapper">
-            <h2 class="catalog__heading">Найдено гостиниц: 38</h2>
+            <h2 class="catalog__heading">Найдено гостиниц: <span class="catalog__results-amount">38</span></h2>
             <select class="catalog__select-control" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
             </select>
@@ -156,7 +166,7 @@
           </div>
           <ul class="catalog__list">
             <li class="catalog__item hotel-card">
-              <a href="#" class="hotel-card__image-link">
+              <a href="#" class="hotel-card__image-link" tabindex="-1">
                 <img class="hotel-card__image" src="images/hotels/hotel-amara.jpg" width="300" height="212" alt="Фотография отеля Amara Resort & Spa.">
               </a>
               <a href="#" class="hotel-card__title-link">
@@ -172,7 +182,7 @@
               <p class="hotel-card__rating">Рейтинг: 8,5</p>
             </li>
             <li class="catalog__item hotel-card">
-              <a href="#" class="hotel-card__image-link">
+              <a href="#" class="hotel-card__image-link" tabindex="-1">
                 <img class="hotel-card__image" src="images/hotels/hotel-poco-diablo.jpg" width="300" height="212" alt="Фотография отеля Villas at Poco Diablo.">
               </a>
               <a href="#" class="hotel-card__title-link">
@@ -188,7 +198,7 @@
               <p class="hotel-card__rating">Рейтинг: 9,2</p>
             </li>
             <li class="catalog__item hotel-card">
-              <a href="#" class="hotel-card__image-link">
+              <a href="#" class="hotel-card__image-link" tabindex="-1">
                 <img class="hotel-card__image" src="images/hotels/hotel-desert-inn.jpg" width="300" height="212" alt="Фотография отеля Desert Quail Inn.">
               </a>
               <a href="#" class="hotel-card__title-link">
@@ -204,7 +214,7 @@
               <p class="hotel-card__rating">Рейтинг: 6,9</p>
             </li>
             <li class="catalog__item hotel-card">
-              <a href="#" class="hotel-card__image-link">
+              <a href="#" class="hotel-card__image-link" tabindex="-1">
                 <img class="hotel-card__image" src="images/hotels/hotel-greentree-inn.jpg" width="300" height="212" alt="Фотография отеля GreenTree Inn.">
               </a>
               <a href="#" class="hotel-card__title-link">
@@ -213,7 +223,7 @@
               <p class="hotel-card__type">Гостиница</p>
               <p class="hotel-card__price">От 1500 ₽</p>
               <a class="hotel-card__link button" href="#">Подробнее</a>
-              <button class="hotel-card__favourites button button--blue" disabled type="button">В избранное</button>
+              <button class="hotel-card__favourites button button--blue" type="button">В избранное</button>
               <p class="hotel-card__stars hotel-card__stars--2">
                 <span class="visually-hidden">2 звезды</span>
               </p>
@@ -251,7 +261,7 @@
             <span class="visually-hidden">Ваш e-mail.</span>
             <input class="newsletter__input" type="email" name="email" placeholder="Ваш e-mail" required>
           </label>
-          <button class="newsletter__button button button--blue" disabled type="submit">Подписаться</button>
+          <button class="newsletter__button button button--blue" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
