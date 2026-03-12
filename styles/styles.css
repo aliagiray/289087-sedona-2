@@ -911,11 +911,11 @@ img {
 }
 
 .breadcrumbs__link--home[href]:hover {
-  opacity: 0.6;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .breadcrumbs__link--home[href]:active {
-  opacity: 0.3;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-filter__title {
