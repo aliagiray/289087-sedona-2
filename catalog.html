@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="container">
-    <header class="header">
+    <header class="header" data-test="header">
       <a class="header__logo logo" href="index.html">
         <img src="images/logo.svg" width="140" height="70" alt="Логотип компании.">
       </a>
@@ -44,7 +44,7 @@
         </li>
       </ul>
     </header>
-    <main class="catalog-main">
+    <main class="catalog-main" data-test="main">
       <section class="catalog">
         <div class="catalog__filter-wrapper">
           <h1 class="catalog__page-title page-title">Гостиницы Седоны</h1>
@@ -58,7 +58,7 @@
               <a class="breadcrumbs__link">Гостиницы</a>
             </li>
           </ol>
-          <form class="catalog__filter catalog-filter" id="catalog-search" action="https://echo.htmlacademy.ru/" method="get">
+          <form class="catalog__filter catalog-filter" id="catalog-search" action="https://echo.htmlacademy.ru/" method="get" data-test="filter">
             <fieldset class="catalog-filter__group">
               <legend class="catalog-filter__title">Инфраструктура:</legend>
               <ul class="catalog-filter__list">
@@ -142,7 +142,7 @@
             </div>
           </form>
         </div>
-        <div class="catalog__results">
+        <div class="catalog__results" data-test="catalog">
           <div class="catalog__heading-wrapper">
             <h2 class="catalog__heading">Найдено гостиниц: <span class="catalog__results-amount">38</span></h2>
             <select class="catalog__select-control" aria-label="Сортировка">
@@ -277,7 +277,7 @@
           </ol>
         </div>
       </section>
-      <section class="newsletter newsletter--catalog">
+      <section class="newsletter newsletter--catalog" data-test="subscribe">
         <h2 class="newsletter__title">Подпишитесь на&nbsp;рассылку</h2>
         <p class="newsletter__intro">Только полезная информация и&nbsp;никакого спама, честное бойскаутское!</p>
         <form class="newsletter__form" id="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
@@ -289,7 +289,7 @@
         </form>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" data-test="footer">
       <ul class="footer__socials socials">
         <li class="socials__item">
           <a class="socials__link" href="https://vk.com/htmlacademy">
