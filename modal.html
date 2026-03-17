@@ -175,16 +175,16 @@
             <span class="visually-hidden">Закрыть модальное окно.</span>
           </button>
           <form class="modal__form" id="hotel-search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="modal__label">
-              Дата заезда:
-              <input class="modal__date-input" type="text" name="begin-date" placeholder="Укажите дату" value="27 апреля 2020" required>
+            <p class="modal__label">
+              <label for="begin-date">Дата заезда:</label>
+              <input class="modal__date-input" id="begin-date" type="text" name="begin-date" placeholder="Укажите дату" value="27 апреля 2020" required>
               <span class="modal__input-message modal__input-message--error">Мы&nbsp;не&nbsp;можем отправить вас в&nbsp;прошлое.</span>
-            </label>
-            <label class="modal__label">
-              Дата выезда:
-              <input class="modal__date-input" type="text" name="end-date" placeholder="Укажите дату" value="1 сентября 2023" required>
+            </p>
+            <p class="modal__label">
+              <label for="end-date">Дата выезда:</label>
+              <input class="modal__date-input" id="end-date" type="text" name="end-date" placeholder="Укажите дату" value="1 сентября 2023" required>
               <span class="modal__input-message">На&nbsp;эти даты есть свободные номера. Пока есть.</span>
-            </label>
+            </p>
             <div class="modal__label modal__label--adults">
               <label for="adults-number">Взрослые:</label>
               <div class="modal__input-wrapper">
